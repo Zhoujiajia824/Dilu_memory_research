@@ -1,0 +1,31 @@
+
+############ Large language model config ############
+MODEL_PROVIDER: 'qwen' # supported: 'qwen' or 'glm'
+MODEL_TIMEOUT: 60
+EMBED_BATCH_SIZE: 8
+
+# Qwen / DashScope
+QWEN_API_KEY: 'sk-32917b6297aa4ab79cdcf65ee0a01058'
+QWEN_BASE_URL: 'https://dashscope.aliyuncs.com/compatible-mode/v1'
+QWEN_CHAT_MODEL: 'qwen3-max-preview'
+QWEN_EMBED_MODEL: 'text-embedding-v4'
+
+# GLM / BigModel
+GLM_API_KEY: 'your-glm-api-key'
+GLM_BASE_URL: 'https://open.bigmodel.cn/api/paas/v4'
+GLM_CHAT_MODEL: 'glm-4-plus'
+GLM_EMBED_MODEL: 'embedding-3'
+
+############### DiLu settings ############
+reflection_module: False # True or False
+auto_save_memory:   False # True or False     
+few_shot_num: 3 # 0 for zero-shot     20 shots in 20mem , else memory in 20_mem_update
+episodes_num: 10 # run episodes
+memory_path: 'memories/20_mem'
+result_folder: 'results'
+
+############ Highway-env config ############
+simulation_duration: 30 # step
+vehicle_count: 20
+other_vehicle_type: "highway_env.vehicle.behavior.IDMVehicle" #other types are: "highway_env.vehicle.behavior.DefensiveVehicle" or "highway_env.vehicle.behavior.AggressiveVehicle"
+vehicles_density: 3.0

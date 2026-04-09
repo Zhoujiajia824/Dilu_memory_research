@@ -1,0 +1,28 @@
+# 核心依赖 - 自动驾驶仿真环境
+gymnasium>=1.0.0
+highway-env>=1.8.2
+
+# 向量数据库 - 用于记忆存储检索
+chromadb>=0.4.0
+langchain>=0.1.0
+langchain-community>=0.0.10
+
+# 国产模型API调用
+requests>=2.31.0
+
+# 工具库
+PyYAML>=6.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+rich>=13.0.0
+
+# 视频录制 (可选，用于可视化)
+moviepy>=1.0.0
+
+# Web UI (可视化界面)
+gradio>=3.36.0
+gradio_client>=0.2.7
+
+# 其他依赖
+pandas>=1.2.0
+pillow>=9.0.0
