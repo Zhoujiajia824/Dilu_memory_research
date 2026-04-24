@@ -20,7 +20,7 @@ GLM_EMBED_MODEL: 'embedding-3'
 reflection_module: False # True or False
 auto_save_memory:   False # True or False     
 few_shot_num: 3 # 0 for zero-shot     20 shots in 20mem , else memory in 20_mem_update
-episodes_num: 10 # run episodes
+episodes_num: 3 # run episodes
 memory_path: 'memories/20_mem'
 result_folder: 'results'
 
